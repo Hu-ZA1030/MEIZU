@@ -1,0 +1,256 @@
+@charset "utf-8";
+
+/* nav */
+#nav {
+	width: 100%;
+	height: 80px;
+	/* 	background: pink; */
+	/* position: relative; */
+	top: -620px;
+	z-index: 2;
+}
+
+#nav .nav-wrap {
+	width: 1240px;
+	margin: 0 auto;
+	height: 80px;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 5;
+}
+
+/* 导航栏左边 */
+#nav .nav-left {
+	float: left;
+	width: 125px;
+	height: 80px;
+	text-align: center;
+	line-height: 80px;
+}
+
+#nav .nav-left .icon-meizu {
+	font-size: 24px;
+	color: #00B4FF;
+}
+
+/* 导航栏中间 */
+#nav .nav-center {
+	width: 761px;
+	height: 80px;
+	float: right;
+}
+
+#nav .nav-center ul li {
+	float: left;
+}
+
+#nav .nav-center ul li a {
+	display: block;
+	padding: 31px 20px 30px;
+	line-height: 21px;
+	font-size: 14px;
+	transition: color .1s linear;
+	color: #333;
+	position: relative;
+}
+
+
+#nav .nav-center ul li a:hover {
+	color: #16BFF3 !important;
+}
+
+#nav .nav-center ul li:hover>.box-show {
+	display: block;
+	border-bottom: 1px solid #ccc;
+}
+
+li .box-show {
+	position: absolute;
+	top: 80px;
+	left: -140px;
+	width: 123%;
+	height: 200px;
+	background: #FFFFFF;
+	display: none;
+
+}
+.box-show li:hover{
+	opacity: 1;
+}
+
+.box-show ul {
+	width: 1240px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.box-show ul li {
+	width: 140px;
+	height: 142px;
+	text-align: center;
+}
+
+.box-show ul li img {
+	width: 100%;
+	height: 100%;
+}
+
+.box-show ul li span {
+	color: #333;
+	font-size: 12px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: block;
+	padding: 0;
+	cursor: pointer;
+}
+
+.box-show ul li em {
+	display: block;
+	color: #333;
+	font-size: 12px;
+}
+
+.nav-center ul li:nth-child(10) .box-show {
+	border-top: 1px solid #ccc;
+	height: 310px;
+	display: none;
+}
+
+.nav-center ul li:nth-child(10) .box-show ul li {
+	width: 1240px;
+	height: 300px;
+	opacity: 1;
+}
+
+/* 导航栏右边 */
+#nav .nav-right {
+	float: right;
+	width: 250px;
+	height: 80px;
+}
+
+#nav .nav-right div {
+	float: left;
+	margin: -32px 5px 0 10px;
+	width: 170px;
+	height: 30px;
+	line-height: 29px;
+	font-size: 12px;
+	background: #fff;
+	border-radius: 20px;
+	border: 1px solid #999;
+}
+
+#nav .nav-right div input {
+	float: left;
+	display: block;
+	border: none;
+	padding: 0;
+	outline: 0;
+	width: 127px;
+	height: 20px;
+	margin-left: 15px;
+	margin-top: 5px;
+	transition: width .5s;
+	font-size: 12px;
+	line-height: 20px;
+	color: #333;
+	background: transparent;
+	box-sizing: content-box;
+	outline-offset: 0;
+	/* 规定input的轮廓到div的距离 */
+}
+
+#nav .nav-right div em {
+	float: right;
+	font-size: 24px;
+	margin: 0 4px 0 auto;
+}
+
+
+#nav .nav-right span {
+	float: right;
+	width: 29px;
+	height: 29px;
+	font-size: 28px;
+	color: #333;
+}
+
+#nav .nav-right span:nth-of-type(1) {
+	margin: 27px 0 0 8px;
+	position: relative;
+}
+
+#nav .nav-right span:nth-of-type(1) em {
+	position: absolute;
+	top: -2px;
+	right: -3px;
+	height: 15px;
+	border-radius: 50%;
+	background: #c00;
+	color: #fff;
+	line-height: 15px;
+	text-align: center;
+	display: inline-block;
+	padding: 0 4px;
+	text-indent: 0;
+	font-size: 12px;
+}
+
+#nav .nav-right span:nth-of-type(2) {
+	padding: 32px 0 0 8px;
+	margin-top: -5px;
+	position: relative;
+}
+
+.nav-right span:nth-of-type(2) ul {
+	position: absolute;
+	right: 0;
+	z-index: 1;
+	width: 98px;
+	background-color: #fff;
+	top: 64px;
+	left: 50%;
+	border-radius: 2px;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 15px 0;
+	margin-left: -48px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+	display: none;
+}
+
+
+.nav-right span:nth-of-type(2) ul a li {
+	font-size: 12px;
+	display: block;
+	margin: 15px auto;
+	color: #515151;
+}
+
+.nav-right span:nth-of-type(2) ul::after {
+	display: block;
+	content: "";
+	width: 0;
+	height: 0;
+	border: 10px solid;
+	border-color: transparent transparent #fff;
+	left: 40px;
+	top: -15px;
+	position: absolute;
+}
+
+#nav .nav-right span:nth-of-type(2):hover ul {
+	display: block;
+}
+
+#nav .nav-right span:nth-of-type(2):hover ul a li:hover {
+	color: #007AFF;
+}
+

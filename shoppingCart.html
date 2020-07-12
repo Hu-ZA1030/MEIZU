@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/shoppingCart.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+</head>
+
+<body>
+    <!-- nav -->
+    <div id="nav">
+        <div class="nav-wrap">
+            <div class="nav-left">
+                <p class="iconfont icon-meizu"></p>
+            </div>
+            <div class="nav-right">
+                <span>我的订单</span>
+                <span class="">
+                <em>小拓</em>的商城<i class="iconfont icon-xia"></i>
+                <ul>
+                    <a href=""><li>地址管理</li></a>
+                    <a href=""><li>我的收藏</li></a>
+                    <a href=""><li>我的回购金</li></a>
+                    <a href=""><li>问题反馈</li></a>
+                    <a href=""><li>退出</li></a>
+                </ul>
+            </span>
+
+            </div>
+            <div class="nav-center">
+                <ul>
+                    <li class="Color-Font">购物车</li>
+                    <li>确认订单</li>
+                    <li>在线支付</li>
+                    <li>完成</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- main -->
+    <main class="clear_fix">
+        <section>
+            <div class="account">
+                <table class="header-title">
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="" id="check" checkbox="">&nbsp;&nbsp;全选
+                        </td>
+                        <td>单价(元)</td>
+                        <td>数量</td>
+                        <td>小计(元)</td>
+                        <td><a>删除</a></td>
+                    </tr>
+                </table>
+                <ul id="shop">
+                    <li>
+                        <div>
+                            <input type="checkbox" checked="true">&nbsp;&nbsp; 魅族
+                            <span>以免运费</span>
+                        </div>
+                        <table id="account-list">
+                            <tr>
+                                <td>
+                                    <input type="checkbox" checked="true">
+                                    <a href=""><img src="./img/section-zn-listS01.png"></a>
+                                    <span>
+                                    <p>魅族 Type-C 数据线</p>
+                                    <p>白色 1米</p>
+                                </span>
+                                </td>
+                                <td>
+                                    <p>
+                                        49.00
+                                    </p>
+                                </td>
+                                <td>
+                                    <input type="button" class="reduceBtn" value="-">
+                                    <input type="text" value="1">
+                                    <input type="button" class="addBtn" value="+">
+                                </td>
+                                <td>
+                                    <span>49.00</span>
+                                </td>
+                                <td>
+                                    <a class="del">X</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" checked="true">
+                                    <a href=""><img src="./img/section-zn-listS01.png"></a>
+                                    <span>
+                                    <p>魅族 Type-C 数据线</p>
+                                    <p>白色 1米</p>
+                                </span>
+                                </td>
+                                <td>
+                                    <p>
+                                        49.00
+                                    </p>
+                                </td>
+                                <td>
+                                    <input type="button" class="reduceBtn" value="-">
+                                    <input type="text" value="1">
+                                    <input type="button" class="addBtn" value="+">
+                                </td>
+                                <td>
+                                    <span>49.00</span>
+                                </td>
+                                <td>
+                                    <a class="del">X</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" checked="true">
+                                    <a><img src="./img/nav-li02-1.jpg"></a>
+                                    <span>
+                                    <p>魅族 HD60 降噪耳机</p>
+                                    <p>雾银黑</p>
+                                </span>
+                                </td>
+                                <td>
+                                    <p>
+                                        1099.00
+                                    </p>
+                                </td>
+                                <td>
+                                    <input type="button" class="reduceBtn" value="-">
+                                    <input type="text" value="1">
+                                    <input type="button" class="addBtn" value="+">
+                                </td>
+                                <td>
+                                    <span>1099.00</span>
+                                </td>
+                                <td>
+                                    <a class="del">X</a>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </li>
+                </ul>
+            </div>
+            <div class="sum">
+                <div class="sum-left">
+                    <div class="check"> <input type="checkbox" name="">&nbsp;全选</div>
+                    <span>删除选中的商品</span>
+                    <span>共&nbsp;<em>2</em>&nbsp;件商品，已选择&nbsp;<em id="conm">2</em>&nbsp;件</span>
+                </div>
+                <div class="sum-right">
+                    <span>以优惠<em>0.00</em>元，合计(不含运费):<span id="Toprice">1196.00</span></span>
+                    <div id="endAccount">去结算</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <div class="footer-wrap">
+        <div class="head-box">
+            <ul>
+                <li><i class="iconfont icon-shunfeng"></i>
+                    <p>满80免运费</p>
+                </li>
+                <li><i class="iconfont icon-shansongdizhix"></i>
+                    <p>100+ 城市次日送达</p>
+                </li>
+                <li><i class="iconfont icon-qitianwuliyoutuihuanhuobaise"></i>
+                    <p>7天无理由退货</p>
+                </li>
+                <li><i class="iconfont icon-change-days"></i>
+                    <p>15天换货保障</p>
+                </li>
+                <li><i class="iconfont icon-05baoxiushenqing"></i>
+                    <p>1年免费保修</p>
+                </li>
+                <li><i class="iconfont icon-shangmen"></i>
+                    <p>上门快修</p>
+                </li>
+            </ul>
+            <div class="tel-box">
+                <span>周一至周日 8:00-20:00</span>
+                <p>400-788-3333</p>
+                <a>在线客服</a>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="footer-info">
+            <div class="info-left">
+                <ul>
+                    <li>了解魅族</li>
+                    <li>加入我们</li>
+                    <li>联系我们</li>
+                    <li>Flyme</li>
+                    <li>魅族社区</li>
+                    <li>天猫旗舰店</li>
+                    <li>问题反馈</li>
+                    <li>线上销售授权名单公示</li>
+                    <li>出版物经营许可证</li>
+                    <li><i class="iconfont icon-guoqi"></i>简体中文</li>
+                </ul>
+                <div>
+                    ©2019 Meizu Telecom Equipment Co., Ltd. All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp; 粤ICP备13003602号&nbsp; &nbsp; 合字B2-20170010 &nbsp; &nbsp; 营业执照&nbsp; &nbsp; 法律声明&nbsp; &nbsp;
+                    <i class="iconfont icon-guohui"></i>粤公网安备 44049102496009 号
+                </div>
+
+            </div>
+            <div class="info-right">
+                <a href=""><i class="iconfont icon-xiaochengxu"></i>
+                    <div class="">
+                        <img src="./img/footer-right01.png" >
+                    </div>
+                </a>
+                <a href=""><i class="iconfont icon-icon"></i>
+                    <div class="">
+                        <img src="./img/footer-right02.jpg" >
+                    </div>
+                </a>
+                <a href=""><i class="iconfont icon-qqkongjian"></i>
+                </a>
+                <a href=""><i class="iconfont icon-weibo"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./js/check.js"></script>
+<script src="./js/shoppingCart.js"></script>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>登入</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" href="css/login.css">
+	</head>
+	<body>
+		<!-- header -->
+		<header>
+			<i class="iconfont icon-meizu"></i>
+		</header>
+		
+		<!-- main -->
+		<main>
+			<div class="main-box">
+				<form id="main-form" action="" method="">
+					<div class="form-title">
+						<a href="" id="nameLogin">账号登入</a>
+						<span></span>
+						<a href="" id="codeLogin">二维码登入</a>
+					</div>
+					<div class="user-login">
+						<div class="user-box">
+							<div class="err-titl login-success visiblility-visible">
+								<i class=" iconfont icon-error"></i>
+								<span class="err-prom">账号输入错误</span>
+								<i class=" iconfont icon-x"></i>
+							</div>
+							<div class="user-name">
+								<input type="text" id="username" placeholder="手机号/ Flyme 账号" />
+							</div>
+						</div>
+						
+						<div class="user-box">
+							<div class="err-titl ">
+								<i class=" iconfont icon-error"></i>
+								<span class="err-prom">密码输入错误</span>
+								<i class=" iconfont icon-x"></i>
+							</div>
+							<div class="user-name">
+								<input type="password" id="userpass" placeholder="密码" />
+							</div>
+						</div>
+						
+						<div class="user-box">
+							<div class="err-titl">
+								<i class=" iconfont icon-error"></i>
+								<span class="err-prom">验证码输入错误</span>
+								<i class=" iconfont icon-x"></i>
+							</div>
+							<div class="user-name">
+								<input id="verify-text" maxlength="6" type="text"/>
+								<button class="verify-box">发送验证码</button>
+							</div>
+						</div>
+						
+						<div class="check-box">
+							<input type="checkbox" name="" id="" value="" />
+							<p>记住登入状态</p>
+						</div>
+					
+						<div class="login-btn">
+							<input type="button" id="btnLogin" value="登入" />
+						</div>
+						
+						<div class="forget-box">
+							<a href="./regist.html">注册</a>
+							<a href="">忘记密码</a>
+						</div>
+						
+					</div>
+					<div class="two-code">
+						<div class="code-img">
+							<img  src="./img/login/codes.jpg"/>
+							<p>请使用账号中心右上角或最新的Flyme系统相机扫码功能，扫码登录</p>
+						</div>
+					</div>
+				</form>
+			</div>
+		</main>
+	
+		
+		<!-- footer -->
+		<footer>
+			<div class="footer-top">
+				<ul>
+					<li>关于魅族</li>
+					<li>工作机会</li>
+					<li>联系我们</li>
+					<li>法律声明</li>
+					<li>常见问题</li>
+					<li>简体中文</li>
+				</ul>
+				<div class="footer-server">
+					<span>客服热线</span>
+					<span>400-788-3333</span>
+					<a href="">在线客服</a>
+				</div>
+				<div class="outLink">
+					<i class="iconfont icon-weibo"></i>
+					<i class="iconfont icon-icon"></i>
+					<i class="iconfont icon-qqkongjian"></i>
+					<div class="footer-code">
+						<img src="./img/login/weixin.png" />
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>2020 Meizu Telecom Equipment Co., Ltd. All rights reserved.</p>
+				<p>备案号: 粤ICP备13003602号-4</p>
+				<p>经营许可证编号: 粤B2-20130198</p>
+				<p class="iconfont icon-guohui">粤公网安备 44049102496076号</p>
+			</div>
+		</footer>
+	
+	</body>
+</html>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="./js/login.js"></script>

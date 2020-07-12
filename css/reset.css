@@ -1,0 +1,181 @@
+@charset "utf-8";
+/* 重置样式 */
+*{
+    margin:0;
+    padding:0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size:16px;
+    font-weight:normal; 
+}
+dd, dl, dt, ol, p, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: 400;
+}
+ul,ol,li{
+    list-style:none; /*去掉列表符号*/
+}
+b,strong{
+    font-weight:normal; /*清除加粗*/
+}
+em,i{
+    font-style: normal; /*倾斜清除*/
+}
+a,u{
+    text-decoration: none; /*去掉下划线*/
+}
+img{
+    border:0; /*清除图片在有超链接的时候，存在一个蓝色的边框*/
+}
+input{
+    outline:none;/*清除INPUT  聚焦时的 蓝色边框*/
+}
+/* 解决高度塌陷 */
+.clear_fix:after{
+	content:".";
+	display:block;
+	clear:both;
+	height:0;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+
+
+
+
+/* footer */
+.footer-wrap{
+	width: 1240px;
+	height: 225px;
+	margin: 0 auto;
+	padding: 48px 0 20px;
+	border-top: 1px solid #f1f1f1;
+	position: relative;
+}
+.footer-wrap .head-box{
+	width: 1240px;
+}
+.footer-wrap .head-box ul{
+	width: 1000px;
+	float: left;
+}
+.footer-wrap .head-box ul li{
+	float: left;
+	width:15%;
+	text-align: center;
+}
+.footer-wrap .head-box ul li i{
+	font-size: 40px;
+	color: #BABBC0;
+}
+.footer-wrap .head-box ul li P{
+	line-height: 30px;
+	color: #999;
+	font-size: 12px;
+}
+.footer-wrap .head-box .tel-box{
+	float: right;
+	text-align: right;
+	margin-top: -18px;
+}
+.footer-wrap .head-box .tel-box span{
+    color: #999;
+    font-size: 12px;
+    line-height: 30px;
+}
+.footer-wrap .head-box .tel-box p{
+	color: #00c3f5;
+	font-size: 25px;
+	font-weight: 400;
+	margin-top: -6px;
+	line-height: 40px;
+}
+.footer-wrap .head-box .tel-box a{
+	display: block;
+    height: 30px;
+    padding: 0 16px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    border-radius: 20px;
+    margin-top: 3px;
+    display: inline-block;
+    font-size: 14px;
+    background: #0bbbef;
+}
+.footer-wrap .line{
+	width: 1240px;
+	height: 1px;
+	background: #CCCCCC;
+	position: absolute;
+	top: 128px;
+	left: 0px;
+	margin: 10px 0 28px 0;	
+}
+.footer-wrap .footer-info{
+	width: 1240px;
+	position: absolute;
+	top:156px;
+	left: 0px;
+}
+.footer-wrap .footer-info ul li{
+	float: left;
+	line-height: 18px;
+	font-size: 12px;
+	color: #999999;
+	border-right: 1px solid #CCCCCC;
+	padding-right: 15px;
+	margin-right: 15px;
+}
+.footer-wrap .footer-info ul li:nth-child(10){
+	border-right:0px;
+	margin: 0;
+}
+.footer-wrap .footer-info ul li:nth-child(10) i{
+	color: red;
+	margin-right: 6px;
+	opacity: 0.6;
+}
+.footer-wrap .footer-info div{
+	padding-top: 8px;
+	font-size: 12px;
+	color: #999999;
+	margin-top: 16px;
+}
+.footer-info .info-right{
+	float: right;
+	margin-top: 25px;
+}
+.footer-info .info-right a {
+	position: relative;
+}
+.footer-info .info-right a div{
+	position: absolute;
+	bottom: 47px;
+	left: 9px;
+	width: 180px;
+	display: none;
+}
+.footer-info .info-right a div img{
+	width: 100%;
+	height: 100%;
+}
+.footer-info .info-right i{
+	line-height: 27px;
+	font-size: 22px;
+	color: rgb(153, 153, 153);
+	border-right:1px solid #CCCCCC;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.footer-info .info-right a:hover i{
+	color: green;
+}
+.footer-info .info-right a:hover div{
+	display: block
+}
